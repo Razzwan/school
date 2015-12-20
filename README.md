@@ -1,4 +1,4 @@
-Сайт школы программирования
+Тестовая площадка Yii2 Advanced
 ===============================
 
 На основе Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) 
