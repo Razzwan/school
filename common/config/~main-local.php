@@ -28,7 +28,7 @@ return [
                 'yii\web\JqueryAsset' => [
                     'sourcePath' => YII_ENV_DEV ? '@bower/jquery/dist' : null,   // do not publish the bundle
                     'js' => [
-                        YII_ENV_DEV ? 'jquery' : '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js',
+                        YII_ENV_DEV ? 'jquery.js' : '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js',
                     ]
                 ],
             ],
