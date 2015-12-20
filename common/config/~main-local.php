@@ -3,10 +3,17 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=yii2advanced',
-            'username' => 'root',
-            'password' => '',
+            'dsn' => 'pgsql:host=localhost;dbname=school',
+            'username' => 'school_user',
+            'password' => '98Ffew7hyF8_d',
             'charset' => 'utf8',
+            'tablePrefix' => 'school_',
+            'schemaMap' => [
+                'pgsql'=> [
+                    'class'=>'yii\db\pgsql\Schema',
+                    'defaultSchema' => 'public' //specify your schema here
+                ]
+            ], // PostgreSQL
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
