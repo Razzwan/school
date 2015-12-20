@@ -13,22 +13,23 @@ class m151220_100255_test extends Migration
             retstr varchar(254);
         BEGIN
             IF    TG_OP = 'INSERT' THEN
-                astr = NEW.name;
-                mstr := 'Add new user ';
+                astr = NEW.username;
+                mstr := 'Create user ';
                 retstr := mstr || astr;
-                INSERT INTO school_log(action,created_at) values (retstr,NOW());
+                -- extract(epoch from NOW()) - запишет unix time
+                INSERT INTO school_log(action, created_at) values (retstr, extract(epoch from NOW()));
                 RETURN NEW;
             ELSIF TG_OP = 'UPDATE' THEN
-                astr = NEW.name;
+                astr = NEW.username;
                 mstr := 'Update user ';
                 retstr := mstr || astr;
-                INSERT INTO school_log(action,created_at) values (retstr,NOW());
+                INSERT INTO school_log(action,created_at) values (retstr, extract(epoch from NOW()));
                 RETURN NEW;
             ELSIF TG_OP = 'DELETE' THEN
-                astr = OLD.name;
+                astr = OLD.username ;
                 mstr := 'Remove user ';
                 retstr := mstr || astr;
-                INSERT INTO school_log(action,created_at) values (retstr,NOW());
+                INSERT INTO school_log(action,created_at) values (retstr, extract(epoch from NOW()));
                 RETURN OLD;
             END IF;
         END;
