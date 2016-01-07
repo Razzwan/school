@@ -17,14 +17,15 @@
         "php": ">=5.4.0",
         "yiisoft/yii2": ">=2.0.6",
         "yiisoft/yii2-bootstrap": "*",
-        "yiisoft/yii2-swiftmailer": "*"
+        "yiisoft/yii2-swiftmailer": "*",
+        "kartik-v/yii2-export": "1.2.*",
+        "npm-asset/yuicompressor": "2.4.*"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
         "yiisoft/yii2-debug": "*",
         "yiisoft/yii2-gii": "*",
-        "yiisoft/yii2-faker": "*",
-        "npm-asset/bower": "*"
+        "yiisoft/yii2-faker": "*"
     },
     "config": {
         "process-timeout": 1800
