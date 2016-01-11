@@ -37,7 +37,7 @@ return [
                 /*'yii\bootstrap\BootstrapAsset' => false, // bootstrap.css
                 'yii\web\YiiAsset' => false,
                 'yii\bootstrap\BootstrapPluginAsset' => false, // bootstrap.js,*/
-                'all' => [
+                /*'all' => [
                     'class' => 'yii\web\AssetBundle',
                     'basePath' => '@webroot/assets',
                     'baseUrl' => '@web/assets',
@@ -46,7 +46,7 @@ return [
                 ],
                 'yii\bootstrap\BootstrapAsset' => ['css' => [], 'js' => [], 'depends' => ['all']],
                 'yii\web\YiiAsset' => ['css' => [], 'js' => [], 'depends' => ['all']],
-                'yii\bootstrap\BootstrapPluginAsset' => ['css' => [], 'js' => [], 'depends' => ['all']],
+                'yii\bootstrap\BootstrapPluginAsset' => ['css' => [], 'js' => [], 'depends' => ['all']],*/
             ],
             'appendTimestamp' => true,
             // поддержка расширенного синтаксиса Less
