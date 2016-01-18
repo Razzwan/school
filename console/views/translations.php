@@ -1,5 +1,6 @@
 <?php
 /* @var $className string the new migration class name */
+/* @var $fileName string the new file with translations */
 
 echo "<?php\n";
 ?>
@@ -13,7 +14,7 @@ class <?= $className ?> extends Migration
 
     public function up()
     {
-        $phrases_array = require Yii::getAlias('@t10s/phrases.php');
+        $phrases_array = require Yii::getAlias('@t10s/<?=$fileName?>);
         foreach ($phrases_array as $name => $phrase) {
             foreach ($phrase as $locale => $text) {
                 if (!is_numeric($locale)) {
