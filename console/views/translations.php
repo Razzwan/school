@@ -31,6 +31,10 @@ class <?= $className ?> extends Migration
                     $current_phrase = new Phrase();
                 }
 
+                $current_phrase->name = $name;
+                $current_phrase->locale = $locale;
+                $current_phrase->text = $text;
+
                 if (!$current_phrase->save()) {
                     echo "Не удалось сохранить поле {$name} проверьте правильность введенных данных\n";
                 }
