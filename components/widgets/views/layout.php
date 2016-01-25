@@ -74,12 +74,12 @@ use \common\models\Lots;
     </tr>
     <?php if($type == Protocol::TYPE_FINISHED_WITH_NAME): ?>
         <tr>
-            <td style="text-align: left; font-size: 12px; font-weight: bold;">Победитель: <?=$this->data['full_name']; ?></td>
-            <td style="text-align: left; font-size: 12px; font-weight: bold;">_________________________________________________________</td>
+            <td class="sing-footer">Победитель: <?=$this->data['full_name']; ?></td>
+            <td style="font-size: 12px; font-weight: bold;">_________________________________________________________</td>
         </tr>
         <tr>
-            <td style="text-align: left; font-size: 12px; font-weight: bold;">Организатор: <?=$data['org_name']; ?></td>
-            <td style="text-align: left; font-size: 12px; font-weight: bold;">__________________________________________________________</td>
+            <td style="font-size: 12px; font-weight: bold;">Организатор: <?=$data['org_name']; ?></td>
+            <td style="font-size: 12px; font-weight: bold;">__________________________________________________________</td>
         </tr>
     <?php endif; ?>
 </table>
