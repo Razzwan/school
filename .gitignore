@@ -30,3 +30,4 @@ phpunit.phar
 /phpunit.xml
 
 tests/_output/*
+tests/_output/*
